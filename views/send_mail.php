@@ -1,6 +1,6 @@
 <?php
 $errors = '';
-$myemail = 'ms@schmittformatik.de';//<-----Put Your email address here.
+$myemail = 'marcel.schmitt@schmittformatik.de';//<-----Put Your email address here.
 if(empty($_POST['name'])  ||
    empty($_POST['email']) ||
    empty($_POST['message']))
@@ -20,7 +20,7 @@ $email_address))
 if( empty($errors))
 {
 $to = $myemail;
-$email_subject = "Kontaktformular schmittformatik.de: $name";
+$email_subject = "Kontaktformular - schmittformatik.de: $name";
 $email_body = "You have received a new message. ".
 "Here are the details:\nName: $name \n".
 "Email: $email_address\nMessage \n$message";
