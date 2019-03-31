@@ -21,9 +21,10 @@ if( empty($errors))
 {
 $to = $myemail;
 $email_subject = "Kontaktformular - schmittformatik.de: $name";
-$email_body = "You have received a new message. ".
-"Here are the details:\nName: $name \n".
-"Email: $email_address\nMessage \n$message";
+$email_body = "Neue Nachricht eingetroffen: \n".
+"Name: $name \n".
+"Email: $email_address\n".
+"Nachricht: $message";
 $headers = "From: $myemail\n";
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
